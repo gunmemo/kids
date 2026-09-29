@@ -13,5 +13,5 @@ export const approvedArtwork = catalog.filter(item => item.status === 'approved'
 export const drawings = [...approvedArtwork.map(item => item.id), ...Object.keys(paths)];
 export const categoryFor = id => catalog.find(item => item.id === id)?.category || 'basic';
 export const labels = {blank:'자유그림',cat:'고양이', bunny:'토끼', butterfly:'나비', flower:'꽃', rocket:'로켓', fish:'물고기', ...Object.fromEntries(catalog.map(item => [item.id,item.title]))};
-export function svgFor(id) { return `<svg xmlns="http://www.w3.org/2000/svg" width="700" height="600" viewBox="0 0 700 600"><rect width="700" height="600" fill="white"/><g stroke="#303c3a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" fill="white">${paths[id] || ''}</g></svg>`; }
-export const artUrl = id => (id==='blank'||id in paths) ? `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgFor(id))}` : `${import.meta.env.BASE_URL}artwork/${id}.png`;
+export function svgFor(id,thumbnail=false) { return `<svg xmlns="http://www.w3.org/2000/svg" width="700" height="600" viewBox="0 0 700 600"><rect width="700" height="600" fill="white"/><g stroke="#303c3a" stroke-width="${thumbnail?8:5}" stroke-linecap="round" stroke-linejoin="round" fill="white">${paths[id] || ''}</g></svg>`; }
+export const artUrl = (id,thumbnail=false) => (id==='blank'||id in paths) ? `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgFor(id,thumbnail))}` : `${import.meta.env.BASE_URL}artwork/${id}.png`;

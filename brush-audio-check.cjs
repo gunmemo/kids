@@ -12,7 +12,7 @@ const assert=require('node:assert/strict');
   }
  });
  await p.goto(process.env.APP_URL||'http://127.0.0.1:5180');
- await p.getByRole('button',{name:'도안 바꾸기',exact:true}).click();await p.getByRole('button',{name:'기본',exact:true}).click();await p.getByRole('button',{name:'자유그림 밑그림 선택',exact:true}).click();
+ await p.getByRole('button',{name:'도안 바꾸기',exact:true}).click();await p.getByRole('button',{name:'자유 그리기',exact:true}).click();await p.getByRole('button',{name:'자유그림 밑그림 선택',exact:true}).click();
  await p.waitForFunction(()=>!document.querySelector('.complete-button').disabled);
  await p.locator('[data-brush="crayon"]').click();
  await p.waitForFunction(()=>synthEvents.some(e=>e.type==='AudioBufferSourceNode'));

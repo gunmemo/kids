@@ -5,7 +5,7 @@ const assert=require('node:assert/strict');
  try {
   const p=await b.newPage({viewport:{width:1280,height:800},hasTouch:true});
   await p.goto(process.env.APP_URL||'http://127.0.0.1:5180');
-  await p.getByRole('button',{name:'도안 바꾸기',exact:true}).click();await p.getByRole('button',{name:'기본',exact:true}).click();await p.getByRole('button',{name:'자유그림 밑그림 선택',exact:true}).click();
+  await p.getByRole('button',{name:'도안 바꾸기',exact:true}).click();await p.getByRole('button',{name:'자유 그리기',exact:true}).click();await p.getByRole('button',{name:'자유그림 밑그림 선택',exact:true}).click();
   await p.waitForFunction(()=>!document.querySelector('.complete-button').disabled);
   await p.waitForFunction(()=>{const c=document.querySelector('canvas');return c.getContext('2d').getImageData(0,0,700,600).data.every(v=>v===255);});
   const snapshot=()=>p.locator('canvas').evaluate(c=>c.toDataURL());
@@ -25,6 +25,7 @@ const assert=require('node:assert/strict');
   await p.getByRole('button',{name:'실행 취소',exact:true}).click();assert.equal(await snapshot(),drawn);
   await p.getByRole('button',{name:'다시 실행',exact:true}).click();
   for(const [label,fraction] of [['별',.3],['꽃',.7]]){await p.getByRole('button',{name:label+' 스탬프',exact:true}).click();await p.touchscreen.tap(r.x+r.width*fraction,r.y+r.height*.65);}
+  await p.getByRole('button',{name:'자유그림 펜',exact:true}).click();
   for(const [width,height] of [[1280,800],[1280,720],[1024,640]]){
    await p.setViewportSize({width,height});
    const bounds=await p.locator('.palette-dock').boundingBox();const board=await p.locator('.paper').boundingBox();
