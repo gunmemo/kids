@@ -1,0 +1,94 @@
+{
+  "provider": "Runway",
+  "voice": "Niki",
+  "speed": 0.95,
+  "language": "en",
+  "generatedAt": "2026-09-29",
+  "synthetic": true,
+  "clips": [
+    {
+      "name": "Red",
+      "file": "red.mp3",
+      "taskId": "4dccce9f-43f9-416d-ac90-2146e039e1c8",
+      "duration": 1.36
+    },
+    {
+      "name": "Orange",
+      "file": "orange.mp3",
+      "taskId": "2083ebd7-2843-41a6-914a-1322f9307796",
+      "duration": 1.92
+    },
+    {
+      "name": "Yellow",
+      "file": "yellow.mp3",
+      "taskId": "164db01f-4ebe-42e6-8e07-37401a436b0f",
+      "duration": 1.12
+    },
+    {
+      "name": "Green",
+      "file": "green.mp3",
+      "taskId": "2872a006-c77b-411b-a761-789c017ff144",
+      "duration": 1.36
+    },
+    {
+      "name": "Mint",
+      "file": "mint.mp3",
+      "taskId": "ecebce2e-9079-4477-9de3-864fc8e382ce",
+      "duration": 0.88
+    },
+    {
+      "name": "Light blue",
+      "file": "light-blue.mp3",
+      "taskId": "36ffcac0-917e-48fd-84ee-80c342fd8a90",
+      "duration": 1.84
+    },
+    {
+      "name": "Lavender",
+      "file": "lavender.mp3",
+      "taskId": "ffddc221-9705-4abf-9413-b04891e63f2e",
+      "duration": 0.72
+    },
+    {
+      "name": "Pink",
+      "file": "pink.mp3",
+      "taskId": "28fc54bf-f984-428f-91fb-1fd06e08ab9f",
+      "duration": 1.12
+    },
+    {
+      "name": "Brown",
+      "file": "brown.mp3",
+      "taskId": "6fa3721d-deae-4aa9-a3ce-cc4232cb5fd2",
+      "duration": 2.72
+    },
+    {
+      "name": "Gray",
+      "file": "gray.mp3",
+      "taskId": "ba2bd89d-092c-4e89-8525-5558f10ac28b",
+      "duration": 2
+    },
+    {
+      "name": "White",
+      "file": "white.mp3",
+      "taskId": "00363257-34df-4d8c-93c1-16a40fb1e0cf",
+      "duration": 0.96
+    },
+    {
+      "name": "Blue",
+      "file": "blue.mp3",
+      "taskId": "7b68258a-7016-4df3-8bf4-51c776c40d61",
+      "duration": 1.04
+    },
+    {
+      "name": "Purple",
+      "file": "purple.mp3",
+      "taskId": "dde6dd80-4dcb-4d4a-af14-268ebe1e9294",
+      "duration": 1.2
+    },
+    {
+      "name": "Turquoise",
+      "file": "turquoise.mp3",
+      "taskId": "26baf703-1c2c-4028-b0bc-fda9ee3b00d8",
+      "duration": 0.88
+    }
+  ]
+}

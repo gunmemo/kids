@@ -1,0 +1,14 @@
+node_modules
+dist
+*.log
+.pnpm-store
+preview.png
+mobile-preview.png
+
+# Local verification screenshots and secrets
+/*-preview.png
+/tablet-complete.png
+/ribbon-fixed.png
+.env
+.env.*
+!.env.example
