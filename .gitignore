@@ -12,3 +12,9 @@ mobile-preview.png
 .env
 .env.*
 !.env.example
+
+# Superseded role drafts and local generation paths
+/public/artwork/roles-*.svg
+/artwork/create-roles.cjs
+/artwork/roles-generation.json
+/artwork/legacy-role-drafts/

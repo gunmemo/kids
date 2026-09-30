@@ -6,12 +6,21 @@ export function drawBrush(ctx,x1,y1,x2,y2,stroke){
   if(points.length===1){ctx.arc(points[0][0],points[0][1],width/2,0,Math.PI*2);ctx.fill();}
   else{ctx.moveTo(...points[0]);for(const point of points.slice(1))ctx.lineTo(...point);ctx.stroke();}
  }
- if(kind!=='neon'){
-  ctx.save();ctx.lineCap='round';ctx.lineJoin='round';path(x1===x2&&y1===y2?[[x1,y1]]:[[x1,y1],[x2,y2]],size,color);ctx.restore();return;
- }
  if(!stroke.points){stroke.points=[[x1,y1]];stroke.base=ctx.getImageData(0,0,ctx.canvas.width,ctx.canvas.height);}
  if(x1!==x2||y1!==y2)stroke.points.push([x2,y2]);
  ctx.putImageData(stroke.base,0,0);
+ if(kind!=='neon'){
+  if(!stroke.texture){
+   const tile=document.createElement('canvas');tile.width=32;tile.height=32;
+   const grain=tile.getContext('2d');grain.fillStyle=color;grain.globalAlpha=.94;grain.fillRect(0,0,32,32);
+   grain.globalCompositeOperation='destination-out';grain.globalAlpha=.35;
+   for(let i=0;i<170;i++)grain.fillRect((i*17+i*i*3)%32,(i*11+Math.floor(i/7)*5)%32,1,1);
+   stroke.texture=ctx.createPattern(tile,'repeat');
+  }
+  ctx.save();ctx.lineCap='round';ctx.lineJoin='round';path(stroke.points,size,stroke.texture);ctx.restore();
+  if(stroke.outline){ctx.save();ctx.globalCompositeOperation='darken';ctx.drawImage(stroke.outline,0,0);ctx.restore();}
+  return;
+ }
  // Keep the chosen hue, but give pastel palette colors a saturated neon emitter.
  const rgb=color.match(/\w\w/g).map(v=>parseInt(v,16)),low=Math.min(...rgb),high=Math.max(...rgb);
  const glow=high-low<20?color:`rgb(${rgb.map(v=>Math.round(24+(v-low)/(high-low)*231)).join(',')})`;

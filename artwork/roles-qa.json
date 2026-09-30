@@ -1,0 +1,122 @@
+[
+  {
+    "id": "roles-01",
+    "largeRegions": 70,
+    "changed": true,
+    "recovered": 1594
+  },
+  {
+    "id": "roles-02",
+    "largeRegions": 62,
+    "changed": true,
+    "recovered": 2287
+  },
+  {
+    "id": "roles-03",
+    "largeRegions": 60,
+    "changed": true,
+    "recovered": 4568
+  },
+  {
+    "id": "roles-04",
+    "largeRegions": 39,
+    "changed": true,
+    "recovered": 713
+  },
+  {
+    "id": "roles-05",
+    "largeRegions": 67,
+    "changed": true,
+    "recovered": 2
+  },
+  {
+    "id": "roles-06",
+    "largeRegions": 57,
+    "changed": true,
+    "recovered": 8746
+  },
+  {
+    "id": "roles-07",
+    "largeRegions": 84,
+    "changed": true,
+    "recovered": 7199
+  },
+  {
+    "id": "roles-08",
+    "largeRegions": 41,
+    "changed": true,
+    "recovered": 57
+  },
+  {
+    "id": "roles-09",
+    "largeRegions": 62,
+    "changed": true,
+    "recovered": 225
+  },
+  {
+    "id": "roles-10",
+    "largeRegions": 66,
+    "changed": true,
+    "recovered": 68
+  },
+  {
+    "id": "roles-11",
+    "largeRegions": 60,
+    "changed": true,
+    "recovered": 0
+  },
+  {
+    "id": "roles-12",
+    "largeRegions": 86,
+    "changed": true,
+    "recovered": 0
+  },
+  {
+    "id": "roles-13",
+    "largeRegions": 74,
+    "changed": true,
+    "recovered": 2
+  },
+  {
+    "id": "roles-14",
+    "largeRegions": 60,
+    "changed": true,
+    "recovered": 1274
+  },
+  {
+    "id": "roles-15",
+    "largeRegions": 83,
+    "changed": true,
+    "recovered": 1445
+  },
+  {
+    "id": "roles-16",
+    "largeRegions": 46,
+    "changed": true,
+    "recovered": 6066
+  },
+  {
+    "id": "roles-17",
+    "largeRegions": 53,
+    "changed": true,
+    "recovered": 6203
+  },
+  {
+    "id": "roles-18",
+    "largeRegions": 54,
+    "changed": true,
+    "recovered": 0
+  },
+  {
+    "id": "roles-19",
+    "largeRegions": 55,
+    "changed": true,
+    "recovered": 224
+  },
+  {
+    "id": "roles-20",
+    "largeRegions": 45,
+    "changed": true,
+    "recovered": 0
+  }
+]

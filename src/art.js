@@ -8,10 +8,10 @@ const paths = {
  rocket: `<path d="M289 372 Q260 214 350 109 Q440 214 411 372Z M291 297 Q221 315 217 419 L291 378 M409 297 Q479 315 483 419 L409 378 M310 391 Q301 479 350 531 Q399 479 390 391Z"/><circle cx="350" cy="258" r="46"/><circle cx="350" cy="258" r="30"/><path d="M302 186 L398 186 M288 352 L412 352 M332 405 Q319 452 350 487 Q381 452 368 405"/><path d="M178 191 L186 211 L208 211 L191 225 L197 246 L178 233 L160 246 L166 225 L149 211 L171 211Z"/>`,
  fish: `<path d="M454 317 L554 230 L554 424 L454 365 Q328 499 167 342 Q310 173 454 317Z"/><path d="M265 265 Q331 284 307 424 M328 241 L376 180 L412 265 M337 424 L388 467 L410 405"/><circle cx="244" cy="324" r="13" fill="#303c3a"/><path d="M174 348 Q214 377 236 352 M369 304 Q326 342 369 380Z"/><circle cx="152" cy="211" r="23"/><circle cx="198" cy="146" r="14"/>`
 };
-export const categories = {animals:'동물', objects:'사물 및 탈것', fairies:'요정', princesses:'공주', basic:'기본 도안'};
+export const categories = {animals:'동물', objects:'사물 및 탈것', fairies:'요정', princesses:'공주', roles:'직업과 역할', basic:'기본 도안'};
 export const approvedArtwork = catalog.filter(item => item.status === 'approved');
 export const drawings = [...approvedArtwork.map(item => item.id), ...Object.keys(paths)];
 export const categoryFor = id => catalog.find(item => item.id === id)?.category || 'basic';
 export const labels = {blank:'자유그림',cat:'고양이', bunny:'토끼', butterfly:'나비', flower:'꽃', rocket:'로켓', fish:'물고기', ...Object.fromEntries(catalog.map(item => [item.id,item.title]))};
 export function svgFor(id,thumbnail=false) { return `<svg xmlns="http://www.w3.org/2000/svg" width="700" height="600" viewBox="0 0 700 600"><rect width="700" height="600" fill="white"/><g stroke="#303c3a" stroke-width="${thumbnail?8:5}" stroke-linecap="round" stroke-linejoin="round" fill="white">${paths[id] || ''}</g></svg>`; }
-export const artUrl = (id,thumbnail=false) => (id==='blank'||id in paths) ? `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgFor(id,thumbnail))}` : `${import.meta.env.BASE_URL}artwork/${id}.png`;
+export const artUrl = (id,thumbnail=false) => (id==='blank'||id in paths) ? `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgFor(id,thumbnail))}` : `${import.meta.env.BASE_URL}artwork/${id}.${catalog.find(item=>item.id===id)?.format||'png'}`;

@@ -11,7 +11,7 @@ const assert=require('node:assert/strict');
   const snapshot=()=>p.locator('canvas').evaluate(c=>c.toDataURL());
   const before=await snapshot();
   await p.getByRole('button',{name:'색상 #4189ed',exact:true}).click();
-  assert.equal(await p.getByRole('button',{name:'자유그림 펜',exact:true}).getAttribute('aria-pressed'),'true');
+  assert.equal(await p.getByRole('button',{name:'색연필',exact:true}).getAttribute('aria-pressed'),'true');
   const r=await p.locator('canvas').boundingBox();
   await p.mouse.move(r.x+r.width*.25,r.y+r.height*.3);await p.mouse.down();
   await p.mouse.move(r.x+r.width*.6,r.y+r.height*.5,{steps:8});await p.mouse.up();
@@ -25,7 +25,7 @@ const assert=require('node:assert/strict');
   await p.getByRole('button',{name:'실행 취소',exact:true}).click();assert.equal(await snapshot(),drawn);
   await p.getByRole('button',{name:'다시 실행',exact:true}).click();
   for(const [label,fraction] of [['별',.3],['꽃',.7]]){await p.getByRole('button',{name:label+' 스탬프',exact:true}).click();await p.touchscreen.tap(r.x+r.width*fraction,r.y+r.height*.65);}
-  await p.getByRole('button',{name:'자유그림 펜',exact:true}).click();
+  await p.getByRole('button',{name:'색연필',exact:true}).click();
   for(const [width,height] of [[1280,800],[1280,720],[1024,640]]){
    await p.setViewportSize({width,height});
    const bounds=await p.locator('.palette-dock').boundingBox();const board=await p.locator('.paper').boundingBox();

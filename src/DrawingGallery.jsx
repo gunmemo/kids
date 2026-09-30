@@ -1,7 +1,7 @@
 import React,{useRef} from 'react';
 import {ChevronLeft,ChevronRight} from 'lucide-react';
 import {labels,artUrl} from './art';
-const tabs=[['animals','🦁','동물','#ffcc65'],['objects','🚀','탈것','#8ed4ff'],['fairies','🧚','요정','#cf9dff'],['princesses','👑','공주','#ff9ec4'],['basic',null,'자유 그리기','#83dfb3']];
+const tabs=[['animals','🦁','동물','#ffcc65'],['objects','🚀','탈것','#8ed4ff'],['fairies','🧚','요정','#cf9dff'],['princesses','👑','공주','#ff9ec4'],['roles','🧑‍🚒','직업과 역할','#ffb788'],['basic',null,'자유 그리기','#83dfb3']];
 export function Sketchbook(){return <svg className="sketchbook-icon" viewBox="0 0 120 100" aria-hidden="true"><rect x="15" y="12" width="77" height="79" rx="12" fill="#d6c5f0"/><rect x="12" y="7" width="77" height="79" rx="10" fill="white" stroke="#aa8ece" strokeWidth="3"/>{[22,40,58,76].map(y=><path key={y} d={`M8 ${y}h12`} stroke="#9272b8" strokeWidth="5" strokeLinecap="round"/>)}{[['#ff777f',74,27],['#ffcd57',86,34],['#51cbb7',98,41]].map(([color,x,y])=><g key={color} transform={`translate(${x} ${y}) rotate(26)`}><rect width="11" height="43" rx="3" fill={color}/><path d="M0 43 L5.5 55 L11 43" fill={color}/><path d="M1 10H10M1 33H10" stroke="white" strokeWidth="3"/></g>)}</svg>}
 export function DrawingGallery({category,setCategory,page,setPage,items,selected,onSelect}){
  const gesture=useRef(null),blockClick=useRef(false);const pages=Math.ceil(items.length/8);

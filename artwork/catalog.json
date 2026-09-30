@@ -638,5 +638,185 @@
     "title": "오로라 빛 망토를 두른 하늘 공주",
     "subject": "cute original sky princess wearing a flowing aurora cape divided into three broad bands",
     "status": "approved"
+  },
+  {
+    "id": "roles-01",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "불을 끄는 소방관",
+    "subject": "불을 끄는 소방관",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-02",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "청진기로 진찰하는 의사",
+    "subject": "청진기로 진찰하는 의사",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-03",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "달을 걷는 우주비행사",
+    "subject": "달을 걷는 우주비행사",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-04",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "요리하는 요리사",
+    "subject": "요리하는 요리사",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-05",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "교통 정리하는 경찰관",
+    "subject": "교통 정리하는 경찰관",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-06",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "꽃에 물 주는 정원사",
+    "subject": "꽃에 물 주는 정원사",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-07",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "책을 읽어주는 선생님",
+    "subject": "책을 읽어주는 선생님",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-08",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "강아지를 진찰하는 수의사",
+    "subject": "강아지를 진찰하는 수의사",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-09",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "비행기를 조종하는 조종사",
+    "subject": "비행기를 조종하는 조종사",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-10",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "이젤 앞에서 그림을 그리는 화가",
+    "subject": "이젤 앞에서 그림을 그리는 화가",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-11",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "트럭을 운전하는 운전사",
+    "subject": "트럭을 운전하는 운전사",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-12",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "책을 찾아주는 도서관 사서",
+    "subject": "책을 찾아주는 도서관 사서",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-13",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "집을 설계하는 건축가",
+    "subject": "집을 설계하는 건축가",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-14",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "현미경으로 관찰하는 과학자",
+    "subject": "현미경으로 관찰하는 과학자",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-15",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "옷을 만드는 패션 디자이너",
+    "subject": "옷을 만드는 패션 디자이너",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-16",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "공을 차는 축구 선수",
+    "subject": "공을 차는 축구 선수",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-17",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "마이크로 노래하는 가수",
+    "subject": "마이크로 노래하는 가수",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-18",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "발레를 하는 무용가",
+    "subject": "발레를 하는 무용가",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-19",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "채소를 수확하는 농부",
+    "subject": "채소를 수확하는 농부",
+    "format": "png",
+    "status": "approved"
+  },
+  {
+    "id": "roles-20",
+    "category": "roles",
+    "categoryLabel": "직업과 역할",
+    "title": "배에서 낚시하는 어부",
+    "subject": "배에서 낚시하는 어부",
+    "format": "png",
+    "status": "approved"
   }
 ]
